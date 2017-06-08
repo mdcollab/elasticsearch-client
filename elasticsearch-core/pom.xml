@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_${scala.version.major}</artifactId>
-      <version>2.2.6</version>
+      <version>3.0.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -46,7 +46,7 @@
     <dependency>
       <groupId>org.json4s</groupId>
       <artifactId>json4s-native_${scala.version.major}</artifactId>
-      <version>3.3.0</version>
+      <version>3.5.2</version>
     </dependency>
 
     <dependency>
@@ -62,8 +62,8 @@
     </dependency>
     <dependency>
       <groupId>com.typesafe.akka</groupId>
-      <artifactId>akka-http-core-experimental_${scala.version.major}</artifactId>
-      <version>2.0.1</version>
+      <artifactId>akka-http-core_${scala.version.major}</artifactId>
+      <version>10.0.7</version>
     </dependency>
 
     <dependency>

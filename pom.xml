@@ -26,13 +26,13 @@
 
     <properties>
         <scala.version.major>2.12</scala.version.major>
-        <akka.version>2.4.14</akka.version>
+        <akka.version>2.5.2</akka.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.scalatest</groupId>
             <artifactId>scalatest_${scala.version.major}</artifactId>
-            <version>2.2.6</version>
+            <version>3.0.3</version>
         </dependency>
     </dependencies>
     <build>
@@ -67,14 +67,13 @@
                     <!-- Enable that when we will migrate to new Scala major version (e.g. 2.11) -->
                     <checkMultipleScalaVersions>false</checkMultipleScalaVersions>
                     <args>
-                        <arg>-target:jvm-1.6</arg>
+                        <arg>-target:jvm-1.8</arg>
                         <arg>-dependencyfile</arg>
                         <arg>${project.build.directory}/.scala_dependencies</arg>
                         <arg>-deprecation</arg>
                         <arg>-language:implicitConversions</arg>
                         <arg>-unchecked</arg>
                         <arg>-feature</arg>
-                        <arg>-Ybackend:GenBCode</arg>
                         <arg>-optimise</arg>
                     </args>
                     <jvmArgs>
